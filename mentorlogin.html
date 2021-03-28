@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="mentorstyle.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Register</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function disableSubmit() {
+            document.getElementById("submit").disabled = true;
+        }
+        function activateButton(element) {
+            if (element.checked) {
+                document.getElementById("submit").disabled = false;
+            }
+            else {
+                document.getElementById("submit").disabled = true;
+            }
+        }
+    </script>
+</head>
+<body onload="disableSubmit()">
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="process.php" autocomplete="off" method="POST">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" name="name" required>
+                </div>
+<!--                 <div class="input-box">
+                    <span class="details">User Name</span>
+                    <input type="text" placeholder="Enter your username" required>
+                </div> -->
+<!--                 <div class="input-box">
+                    <span class="details">Field of expertise</span>
+                    <input type="text" placeholder="Enter your field" name="field" required>
+                </div> -->
+<!--                 <div class="input-box">
+                    <span class="details">Years of experience</span>
+                    <input type="text" placeholder="Enter the years" name="exp" required>
+                </div> -->
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" name="mail" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone</span>
+                    <input type="text" placeholder="Enter your number" name="phone" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your password" name="password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">confirm Password</span>
+                    <input type="password" placeholder="Confirm your password" name="repassword" required>
+                </div>
+            </div>
+            <div class="gender-details">
+                <div class="category">
+                    <!-- <label for="">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="">
+                        <span class="dot one"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="">
+                        <span class="dot one"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label> -->
+                    <label for="gender">Choose your field:</label>
+                    <select id="gndr" name="field" class="fields" required>
+                        <option value="" disabled selected>Field of Interest</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Game Development">Game Development</option>
+                        <option value="Software Testing">Software Testing</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Web Development">Web Development</option>
+                    </select>
+                </div>
+            </div>
+            <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)"> <a href="#"
+                style="color: black; text-decoration: none;">I Agree Terms &
+                Conditions</a>
+            <button type="submit" class="btn-block btn" style="background: linear-gradient(135deg, #71b7e6, #9b59b6);color: white;margin-top: 20px;">REGISTER</button>
+            <button type="button" class="btn-block btn btn-success" onClick="location.href='index.html'" style="margin-top:40px;color:white;font-weight:bold">HOME</button>
+
+        </form>
+        <div id="vanta-canvas"></div>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
+        <script type="text/javascript">
+            VANTA.HALO({
+                el: "#vanta-canvas",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                size: 1.7
+            })
+        </script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+        <script type="text/javascript">
+            VANTA.FOG({
+                el: "#vanta-canvas",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                highlightColor: 0x1da0a9,
+                midtoneColor: 0x36a9d9,
+                lowlightColor: 0x6d16c5,
+                baseColor: 0xffffff
+            })
+        </script>
+    </div>
+</body>
+</html>
