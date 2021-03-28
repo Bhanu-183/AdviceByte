@@ -52,7 +52,7 @@
                     }
                  ?>
                 </p>
-                <a href="https://discord.gg/5DhtYv6f" class='discordbtn' target="_blank">JOIN OUR DISCORD COMUNITY!!</a>
+                <a href="https://discord.gg/2HSChN3ukw" class='discordbtn' target="_blank">JOIN OUR DISCORD COMUNITY!!</a>
             </div>
         </div>
     </div>
