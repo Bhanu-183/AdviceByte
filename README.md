@@ -1,6 +1,6 @@
 # AdviceByte
 
-
+## Hosted at: http://advicebyte.lovestoblog.com/
 ## Inspiration
 There are many success stories around startup now a days.But there is no online platform for mentoriship of startups. Mentoring and guidance are very critical for early stage startups,as some startups fail in the initial state of developemt due to lack of support or proper knowledge. This project mainly designed to help upcoming startups by providing proper guidance in the field of their interest because we need a proper guidance in-order to achieve something.So we came up with this idea so that intrested mentors can voluntarily guide early start-ups and interested clients can ask help from them.
 
