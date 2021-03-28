@@ -1,4 +1,4 @@
-# AdviceByte
+# <h1 align="center">AdviceByte</h1>
 <table> 
 <tr>
   <th>Made from : </th>
