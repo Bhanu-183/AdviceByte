@@ -1,15 +1,5 @@
-# <h1 align="center">AdviceByte</h1>
-<table> 
-<tr>
-  <th>Made from : </th>
-<td align="center"><img alt="HTML5" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/>
-<img alt="CSS3" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/>
-<img alt="JavaScript" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
-<img alt="PHP" src="https://img.shields.io/badge/php-%23777BB4.svg?&style=for-the-badge&logo=php&logoColor=white"/>
-  <img alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
-</td>
-  </tr>
-</table>
+ ## <h1 align="center">AdviceByte</h1>
+
 ## Hosted at: http://advicebyte.lovestoblog.com/
 ## Inspiration
 There are many success stories around startup now a days.But there is no online platform for mentoriship of startups. Mentoring and guidance are very critical for early stage startups,as some startups fail in the initial state of developemt due to lack of support or proper knowledge. This project mainly designed to help upcoming startups by providing proper guidance in the field of their interest because we need a proper guidance in-order to achieve something.So we came up with this idea so that intrested mentors can voluntarily guide early start-ups and interested clients can ask help from them.
