@@ -1,0 +1,324 @@
+*
+{
+    font-family:'Alata';
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+.navbar-brand
+{
+    font-size: 40px;
+}
+.heading
+{
+    height: 800px;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image:linear-gradient(to right, rgba(8, 8, 8, 0.7), rgba(17, 16, 17, 0.5)),url('./images/hero-bg.jpg');
+}
+
+.about
+{
+    margin-top:0px;
+    height: 600px;
+}
+
+.quotes
+{
+    color: white;
+    height: 500px;
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image:linear-gradient(to right, rgba(8, 8, 8, 0.7), rgba(17, 16, 17, 0.5)),url('./images/cta-bg.jpg');
+}
+
+.mySlides {display: none;}
+
+.social{
+    padding: 10px;
+    font-size: 25px;
+    width:40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    margin-right: 30px;
+    border-radius: 10px;
+  }
+  .social:hover
+  {
+    color: white;
+    text-decoration: none;
+  }
+  .fa-facebook{
+    background: #3B5998;
+    color: white;
+  }
+  .fa-linkedin{
+    background: #bb0000;
+    color: white;
+  }
+  .fa-twitter{
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram{
+    background:rgb(224, 84, 33);
+    color: white;
+  }
+  
+  .active-dots{
+    background-color: #717171;
+  }
+  .fade
+  {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .2} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade
+  {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .contact-icon
+  {
+      width: 78px;
+      height: 78px;
+      background-color:#cc1616;
+      padding:20px;
+      border-radius: 50%;
+  }
+
+  .footer
+{
+  margin-top: 125px;
+  color: white;
+  height: 170px;
+  width: 100%;
+  margin-bottom: -200px;
+  background-color: black;
+}
+
+.footer h1
+{
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.footer img
+{
+  float: right;
+  margin-top:75px;
+  padding: 1px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+
+.footer p
+{
+  float:right; 
+  margin-top:110px;
+  margin-right:-280px;
+  color: hsl(0, 0%, 41%);
+}
+
+@media only screen and (min-width:1000px)
+{
+        .navbar-collapse
+        {
+            margin-left: 600px;
+        }
+        .nav-item
+        {
+            margin-right: 40px;
+        }
+        .my-sm-0
+        {
+            margin-right: 50px;
+        }
+        .main
+        {
+            margin-top: 300px;
+            margin-left: -300px;
+        }
+        .services
+        {
+          margin-top: 70px;
+        }
+        .service-block
+        {
+            margin-left: 240px;
+        }
+        .team-block
+        {
+            margin-left:400px;
+            margin-bottom: 50px;
+        }
+        .service-cards
+        {
+            box-shadow:0px 2px 10px rgb(184, 179, 179);
+            height: 350px;
+            margin-right: 50px;
+            border-radius: 15px;
+        }
+
+        .team-cards
+        {
+            box-shadow:0px 2px 10px rgb(184, 179, 179);
+            height: 400px;
+            margin-right: 50px;
+            border-radius: 15px;
+        }
+        .caption
+        {
+            margin-left:50px;
+        }
+        .map
+        {
+            margin-left:100px;
+        }
+        .mail-box
+        {
+            margin-left:-15px;
+        }
+        .phone-box
+        {
+            margin-left:-60px;
+        }
+        .details
+        {
+          margin-top: 100px;
+        }
+        .service-data
+        {   
+          padding: 75px;
+        }
+        
+        
+}
+
+@media only screen and (max-width:360px)
+{
+    .main
+    {
+        margin-top: 190px;
+        margin-left: 10px;
+    }
+    .main-heading
+    {
+        font-size: 45px;
+    }
+    .service-block,.team-block
+    {
+        margin-left: 20px;
+    }
+    .services
+    {
+       margin-top:500px;
+    }
+    .service-data
+    {   
+      padding:5px;
+    }
+    .service-cards
+    {
+        box-shadow:0px 2px 10px rgb(184, 179, 179);
+        height: 230px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+    .team-cards
+    {
+        box-shadow:0px 2px 10px rgb(184, 179, 179);
+        height: 280px;
+        margin-left:-15px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+    }
+    .map
+    {
+        margin-left: 10px;
+    }
+    .map-img
+    {
+        height: 100px;
+        width: 300px;margin-top: 200px;
+    }
+    .contact-icon
+    {
+        margin-left: -100px;
+    }
+    
+    .footer
+      {
+        margin-top: 240px;
+        height: 200px;
+      }
+
+      .footer h1
+      {
+        margin-top: 25px;
+        margin-left: 60px;
+      }
+
+      .footer img 
+      {
+        margin-top: 100px;
+        display: block;
+      }
+
+      .footer p
+      {
+        margin-top: 10px;
+        margin-left: 30px;
+        float: left;
+      }
+      .fb-block
+      {
+        position: absolute;
+        margin-top: -80px;
+        margin-left:-60px;
+      }
+      .inst-block
+      {
+        position: absolute;
+        margin-top: -80px;
+        margin-left:0px;
+      }
+      .tw-block
+      {
+        position: absolute;
+        margin-top: -80px;
+        margin-left:60px;
+      }
+      .ln-block
+      {
+        position: absolute;
+        margin-top: -80px;
+        margin-left:120px;
+      }
+      .details
+      {
+        margin-top: 50px;
+      }
+
+      .mailid
+      {
+        font-size: 17px;
+      }
+}

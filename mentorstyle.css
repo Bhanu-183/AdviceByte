@@ -1,0 +1,176 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg,#17b7e6,#9b59b6);
+}
+#vanta-canvas{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-width: 900px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    left: 0;
+}
+ .container form .user-details{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin: 20px 0 12px 0;
+ }
+ form .user-details .input-box{
+     width: calc(100% / 2 - 20px);
+     margin-bottom: 15px;
+ }
+ .user-details .input-box .details{
+     font-weight: 500;
+     display: block;
+     margin-top: 5px;
+
+ }
+ .user-details .input-box input{
+     outline: none;
+     height: 45px;
+     margin-top: 5px;
+     width: 100%;
+     padding-left: 15px;
+     border: 1px solid #ccc;
+     border-bottom-width: 2px;
+     transition: all 0.3s ease;
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+ .user-details .input-box input:focus,
+ .user-details .input-box input:valid
+ {
+     border-color: #9b59b6;
+ }
+
+ form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+   }
+form .gender-details .category{
+    display: flex;
+    width: 40%;
+    margin: 14px 0 ;
+    justify-content: space-between;
+  }
+  .gender-details .category label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  } 
+
+
+  select#gndr {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    padding: 10px;
+    border-radius: 8px;
+    background: white;
+}
+select#gndr:focus{
+    outline: none;
+    border-color: #9b59b6;
+}
+
+form .button{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 500px;
+    justify-content: center;
+    justify-items: center;
+    outline: none;
+    outline:none;
+    margin-left: 150px;
+    border:none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background:linear-gradient(135deg,#17b7e6,#9b59b6);
+    border-radius: 5px;
+}
+form .button input:hover{
+    background:linear-gradient(-135deg,#17b7e6,#9b59b6);
+}
+
+@media only screen and (max-width:360px)
+{
+    form .button input
+    {
+        margin-left: 0px;
+    }
+}
+/* 
+ @media (max-width :584px)
+{
+    .container{
+        max-width: 100%;
+    }
+     
+ form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  } 
+   form .category{
+    width: 100%;
+  } 
+   .container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  } 
+   .user-details::-webkit-scrollbar{
+    width: 2px;
+  } 
+   } 
+
+   @media(max-width: 459px){
+    .container .content .category{
+      flex-direction: column;
+    }
+  } 
+  
